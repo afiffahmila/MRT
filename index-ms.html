@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>MRT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Logo MRT">
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="../Main/index-ms.html">LAMAN UTAMA</a>
+                <a href="../services/services-ms.html">PERKHIDMATAN</a>
+                <a href="../about/about-ms.html">TENTANG</a>
+                <a href="../contact/contact-ms.html">HUBUNGI</a>
+            </div>
+
+            <div class="language-switcher">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="en">EN</option>
+                    <option value="ms" selected>BM</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <p class="t1">PASUKAN PENYELAMAT MINCHING</p>
+        <p class="t2">
+            Perkhidmatan tunda profesional kami beroperasi 24/7 untuk membantu anda setiap kali kenderaan anda rosak atau anda memerlukan bantuan di tepi jalan. Sama ada tayar pancit, kerosakan enjin, atau kemalangan, pasukan kami yang boleh dipercayai akan segera tiba untuk membawa anda dan kenderaan anda ke tempat yang selamat. Kami menjamin tindak balas pantas, harga berpatutan, dan penjagaan sepenuhnya dalam setiap tugasan yang kami jalankan.
+        </p>
+    </div>
+
+    <!-- Language Switch Script -->
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = "index.html";
+            } else {
+                window.location.href = "index-ms.html";
+            }
+        }
+    </script>
+
+</body>
+</html>

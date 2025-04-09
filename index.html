@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MRT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="MRT Logo">
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="../services/services.html">SERVICES</a>
+                <a href="../about/about.html">ABOUT</a>
+                <a href="../contact/contact.html">CONTACT</a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="en" selected>EN</option>
+                    <option value="ms">BM</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="t1">MINCHING RESCUE TEAM</p>
+        <p class="t2">
+            Our professional towing service operates 24/7 to assist you whenever your vehicle breaks down or you're in need of roadside help.
+            Whether it's a flat tire, engine failure, or an accident, our reliable team will be there promptly to get you and your vehicle to safety.
+            We ensure fast response, affordable pricing, and the utmost care in every job we handle.
+        </p>
+    </div>
+
+    <!-- Language Change Script -->
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'ms') {
+                window.location.href = "index-ms.html"; // Malay version
+            } else {
+                window.location.href = "index.html"; // English version
+            }
+        }
+    </script>
+
+</body>
+</html>
+
